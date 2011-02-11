@@ -1,0 +1,7 @@
+#edit.puzzle_area
+  =image_tag @crossword.picture.url
+  %table
+    -@crossword.data.each_with_index do |row_data, row|
+      %tr
+        -row_data.each_with_index do |item, col|
+          %td{ :id => "#{row}_#{col}", :class => item.zero? ? "" : "checked"}

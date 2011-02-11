@@ -1,0 +1,11 @@
+%p
+  %strong Name:
+  =user.name
+%p
+  %strong Email:
+  =user.email
+  
+- if user == current_user
+  = link_to "Edit", edit_user_path(user)
+  |
+  = link_to "Delete", {:action => "destroy", :id => current_user}, :confirm => "Are you sure?", :method => :delete

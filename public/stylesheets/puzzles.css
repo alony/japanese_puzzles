@@ -1,0 +1,27 @@
+.hidden {
+  display: none; }
+
+.puzzle_area img {
+	position: absolute;
+	height: 100%;
+}
+
+.puzzle_area table {
+	border: 2px solid;
+	border-collapse: collapse;
+	opacity: 0.9;
+	margin: 0;
+	padding: 0;
+}
+
+.puzzle_area table td {
+	border: 1px solid black;
+	width: 10px;
+	height: 10px;
+}
+
+.puzzle_area table td.checked {
+	background: transparent url('/images/fill.gif') center no-repeat;
+	opacity: 0.8;
+}
+
